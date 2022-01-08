@@ -40,3 +40,5 @@ export const phoneHeight = () => {
     const height = Dimensions.get("screen").height;
     return height;
 }
+export const getCloser = (value: number, checkOne: number, checkTwo: number) =>
+  Math.abs(value - checkOne) < Math.abs(value - checkTwo) ? checkOne : checkTwo;
